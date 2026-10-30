@@ -24,10 +24,10 @@ protected:
     }
 };
 
-class NullPtrException : public Exception {
+class NullPointerException : public Exception {
 public:
-    NullPtrException(const std::string& message) : Exception(message) {}
-    NullPtrException(const char* message) : Exception(message) {}
+    NullPointerException(const std::string& message) : Exception(message) {}
+    NullPointerException(const char* message) : Exception(message) {}
 };
 
 class InvalidArgumentException : public Exception {

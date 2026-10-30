@@ -9,9 +9,9 @@ public:
 
     Pair() = default;
 
-    Pair(const T1& f, const T2& s) : first(f), second(s) {}
+    Pair(const T1& firstValue, const T2& secondValue) : first(firstValue), second(secondValue) {}
 
-    Pair(T1&& f, T2&& s) : first(std::move(f)), second(std::move(s)) {}
+    Pair(T1&& firstValue, T2&& secondValue) : first(std::move(firstValue)), second(std::move(secondValue)) {}
 
     Pair(const Pair& other) = default;
     Pair& operator=(const Pair& other) = default;
